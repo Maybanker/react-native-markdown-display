@@ -238,9 +238,8 @@ const renderRules = (Text) => ({
       accessibilityRole={'link'}
       key={node.key}
       onPress={() => openUrl(node.attributes.href, onLinkPress)}
-    >
-      <Text style={styles.link}>{children}</Text>
-    </Text>
+      style={styles.link}
+    >{children}</Text>
   ),
   blocklink: (node, children, parent, styles, onLinkPress) => (
     <Pressable
